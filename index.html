@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="description" content="REVO — Coffee, Reimagined on Wheels. Premium artisan coffee cart bringing specialty brews to your doorstep, events, and streets." />
+  <meta name="theme-color" content="#1a1210" />
+  <title>REVO | Coffee, Reimagined on Wheels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="video" href="/video/hero.mp4" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">REVO</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">REVO</a>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="nav-links" class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#find-us">Find Us</a></li>
+      <li><a href="#contact" class="nav-cta">Book Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1 class="hero-title" aria-label="REVO">
+          <span class="char">R</span><span class="char">E</span><span class="char">V</span><span class="char">O</span>
+        </h1>
+        <p class="hero-tagline">Coffee, Reimagined on Wheels</p>
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary">Explore Menu</a>
+          <a href="#contact" class="btn btn-outline">Book for Event</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">Our Story</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title reveal-text">Born from a Love<br/>for Craft Coffee<br/>& the Open Road</h2>
+          <div class="glass-card">
+            <p class="reveal-up">REVO isn't just a coffee cart — it's a movement. We believe the best coffee shouldn't be confined to four walls. Our custom-built mobile cart brings single-origin, freshly roasted specialty coffee directly to streets, festivals, corporate campuses, and private events.</p>
+            <p class="reveal-up">Every cup is crafted with precision, passion, and a commitment to sustainability. From our zero-waste packaging to our locally sourced beans, every detail reflects our dedication to doing coffee differently.</p>
+          </div>
+        </div>
+        <div class="about-image reveal-up">
+          <picture>
+            <source srcset="/images/about.webp" type="image/webp" />
+            <img src="/images/about.png" alt="REVO coffee cart on the streets" loading="lazy" width="600" height="600" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="section">
+    <div class="container">
+      <div class="section-label">The Menu</div>
+      <h2 class="section-title reveal-text center">Crafted with<br/>Precision & Soul</h2>
+      <div class="menu-categories">
+        <button class="menu-tab active" data-category="hot">Hot Brews</button>
+        <button class="menu-tab" data-category="cold">Cold Brews</button>
+        <button class="menu-tab" data-category="bites">Bites</button>
+      </div>
+      <div class="menu-grid" id="menu-grid">
+        <!-- populated by JS -->
+      </div>
+      <div class="menu-image-wrap reveal-up">
+        <picture>
+          <source srcset="/images/menu.webp" type="image/webp" />
+          <img src="/images/menu.png" alt="REVO signature drinks" loading="lazy" width="800" height="800" />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-dark">
+    <div class="experience-bg">
+      <picture>
+        <source srcset="/images/experience.webp" type="image/webp" />
+        <img src="/images/experience.png" alt="REVO at an event" loading="lazy" width="1920" height="1080" />
+      </picture>
+    </div>
+    <div class="container">
+      <div class="section-label light">The Experience</div>
+      <h2 class="section-title reveal-text light center">More Than<br/>Just Coffee</h2>
+      <div class="stats-grid">
+        <div class="stat-card glass-card reveal-up">
+          <span class="stat-number" data-target="12000">0</span>
+          <span class="stat-label">Cups Served</span>
+        </div>
+        <div class="stat-card glass-card reveal-up">
+          <span class="stat-number" data-target="50">0</span>
+          <span class="stat-label">Events Covered</span>
+        </div>
+        <div class="stat-card glass-card reveal-up">
+          <span class="stat-number" data-target="8">0</span>
+          <span class="stat-label">Cities Visited</span>
+        </div>
+        <div class="stat-card glass-card reveal-up">
+          <span class="stat-number" data-target="99">0</span>
+          <span class="stat-suffix">%</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+      </div>
+      <div class="testimonials reveal-up">
+        <div class="glass-card testimonial-card">
+          <p class="testimonial-text">"REVO turned our corporate event into an unforgettable experience. The coffee was exceptional, and the cart itself became the centerpiece of the evening."</p>
+          <div class="testimonial-author">— Priya M., Event Organiser</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Find Us Section -->
+  <section id="find-us" class="section">
+    <div class="container">
+      <div class="section-label">Find Us</div>
+      <h2 class="section-title reveal-text center">We Come<br/>to You</h2>
+      <p class="section-subtitle reveal-up center">REVO is always on the move. Catch us at these upcoming locations or book us for your next event.</p>
+      <div class="locations-grid">
+        <div class="glass-card location-card reveal-up">
+          <div class="location-icon">📍</div>
+          <h3>Weekend Markets</h3>
+          <p>Every Saturday & Sunday</p>
+          <span class="location-tag">8AM – 2PM</span>
+        </div>
+        <div class="glass-card location-card reveal-up">
+          <div class="location-icon">🏢</div>
+          <h3>Corporate Parks</h3>
+          <p>Weekday mornings</p>
+          <span class="location-tag">7AM – 11AM</span>
+        </div>
+        <div class="glass-card location-card reveal-up">
+          <div class="location-icon">🎉</div>
+          <h3>Private Events</h3>
+          <p>Weddings, parties & more</p>
+          <span class="location-tag">By Booking</span>
+        </div>
+        <div class="glass-card location-card reveal-up">
+          <div class="location-icon">🎵</div>
+          <h3>Festivals & Fairs</h3>
+          <p>Music fests, food fairs</p>
+          <span class="location-tag">Seasonal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA Section -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-label light">Get in Touch</div>
+      <h2 class="section-title reveal-text light center">Book REVO<br/>for Your Event</h2>
+      <p class="section-subtitle reveal-up center light">Whether it's a wedding, corporate gathering, or private party — we bring the café experience to you.</p>
+      <div class="contact-grid">
+        <form id="contact-form" class="glass-card contact-form reveal-up">
+          <div class="form-group">
+            <input type="text" id="form-name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="form-email" placeholder="Email Address" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" id="form-phone" placeholder="Phone Number" />
+          </div>
+          <div class="form-group">
+            <select id="form-event">
+              <option value="" disabled selected>Event Type</option>
+              <option value="wedding">Wedding</option>
+              <option value="corporate">Corporate Event</option>
+              <option value="party">Private Party</option>
+              <option value="festival">Festival / Fair</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="form-message" placeholder="Tell us about your event..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Enquiry</button>
+        </form>
+        <div class="contact-info reveal-up">
+          <div class="glass-card info-card">
+            <h3>Direct Contact</h3>
+            <p>📧 hello@revocafe.in</p>
+            <p>📞 +91 98765 43210</p>
+            <p>📍 Based in India, roaming everywhere</p>
+          </div>
+          <div class="glass-card info-card">
+            <h3>Follow the Cart</h3>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">REVO</span>
+      <p class="footer-text">© 2025 REVO Cafe. Coffee, Reimagined on Wheels.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
