@@ -23,11 +23,11 @@ export function initHero() {
     videoReady: () => videoReady,
     updateScroll(progress) {
       if (videoReady && video.duration) {
-        // Map scroll progress to video duration.
-        // We add a tiny buffer so it doesn't hit exactly the end too early
-        const time = progress * video.duration;
+        // Map scroll progress to (video duration - 1 second) to ignore the last 1 second of the video
+        const effectiveDuration = Math.max(0, video.duration - 1);
+        const time = progress * effectiveDuration;
         if (Math.abs(video.currentTime - time) > 0.05) {
-          video.currentTime = Math.min(time, video.duration - 0.05);
+          video.currentTime = time;
         }
       }
     },

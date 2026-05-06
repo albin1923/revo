@@ -267,7 +267,7 @@ button {
   height: 100vh;
   object-fit: cover;
   z-index: 1;
-  filter: brightness(0.85); /* Slightly darken video for better text contrast */
+  filter: brightness(1.05); /* slightly brighten the video */
 }
 
 .hero-overlay {
@@ -283,7 +283,8 @@ button {
   padding: 0 var(--s-gap) 6rem var(--s-gap);
   pointer-events: none;
   z-index: 10;
-  background: linear-gradient(to top, rgba(14, 12, 11, 0.9) 0%, rgba(14, 12, 11, 0) 50%);
+  /* Lighter gradient that still provides contrast for text */
+  background: linear-gradient(to top, rgba(14, 12, 11, 0.75) 0%, rgba(14, 12, 11, 0.3) 30%, rgba(14, 12, 11, 0) 60%);
 }
 
 .hero-content {
